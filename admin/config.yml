@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: startseite
+    label: Startseite
+    files:
+      - name: startseite
+        label: Startseitentexte
+        file: data/home.json
+        format: json
+        fields:
+          - { label: Slogan – erste Zeile, name: heroTitleFirst, widget: string }
+          - { label: Slogan – hervorgehobene Zeile, name: heroTitleEmphasis, widget: string }
+          - { label: Beschreibung im Titelbereich, name: heroDescription, widget: text }
+          - { label: Willkommen – erste Überschriftenzeile, name: welcomeTitleFirst, widget: string }
+          - { label: Willkommen – hervorgehobene Überschriftenzeile, name: welcomeTitleEmphasis, widget: string }
+          - { label: Willkommenstext, name: welcomeText, widget: text }
+          - { label: Platz-Teaser – erste Überschriftenzeile, name: teaserTitleFirst, widget: string }
+          - { label: Platz-Teaser – hervorgehobene Überschriftenzeile, name: teaserTitleEmphasis, widget: string }
+          - { label: Platz-Teasertext, name: teaserText, widget: text }
+
+  - name: trainer
+    label: Vorstellung Oliver
+    files:
+      - name: trainer
+        label: Vorstellungstext
+        file: data/trainer.json
+        format: json
+        fields:
+          - { label: Vorstellungstext, name: intro, widget: text }
+
+  - name: galerie
+    label: Golfplatzgalerie
+    files:
+      - name: golfplatzgalerie
+        label: Bilder vom Golfplatz
+        file: data/gallery.json
+        format: json
+        fields:
+          - label: Galeriebilder
+            name: images
+            widget: list
+            label_singular: Bild
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: Bilddatei, name: image, widget: image, required: true }
+              - { label: Alternativtext (Bildbeschreibung), name: alt, widget: string, required: true }
