@@ -1,0 +1,14 @@
+{
+  "name": "oliver-eckstein-website-e2e",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:update-snapshots": "cross-env E2E_UPDATE_SNAPSHOTS=1 playwright test --grep \"all pages render\" --update-snapshots"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "cross-env": "^7.0.3"
+  }
+}

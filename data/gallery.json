@@ -1,0 +1,12 @@
+{
+  "placeImages": [
+    { "image": "/images/golfplatz/22-DJI_20260912174423_0003_D.png", "alt": "Golfplatzlandschaft bei Lemgow" },
+    { "image": "/images/golfplatz/19-10.png", "alt": "Golfplatz im Wendland" },
+    { "image": "/images/golfplatz/9-_DSC4656.jpg", "alt": "Golfplatzaufnahme" },
+    { "image": "/images/golfplatz/4-_DSC4631.jpg", "alt": "Golfplatzaufnahme" }
+  ],
+  "trainerImages": [
+    { "image": "/images/oliver/28-DSC00115.jpg", "alt": "Oliver Eckstein beim Training" },
+    { "image": "/images/oliver/29-DSC00124.jpg", "alt": "Oliver Eckstein auf dem Golfplatz" }
+  ]
+}

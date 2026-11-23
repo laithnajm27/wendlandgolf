@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Kontakt",
+  "titleFirst": "Bereit für Ihren",
+  "titleEmphasis": "nächsten Schritt?",
+  "intro": "Schreiben Sie mir kurz, was Sie suchen. Ich melde mich persönlich bei Ihnen.",
+  "nameLabel": "Name",
+  "namePlaceholder": "Vor- und Nachname",
+  "emailLabel": "E-Mail",
+  "emailPlaceholder": "name@beispiel.de",
+  "phoneLabel": "Telefon",
+  "phoneOptional": "(optional)",
+  "phonePlaceholder": "Für einen Rückruf",
+  "packageLabel": "Anfrage",
+  "packageTraining": "Gruppentraining",
+  "packageGeneral": "Allgemeine Frage",
+  "messageLabel": "Nachricht",
+  "messagePlaceholder": "Ihre Nachricht an mich",
+  "formNote": "Ihre Nachricht wird sicher über Formspree übermittelt. Ich melde mich persönlich bei Ihnen.",
+  "submitLabel": "Nachricht senden"
+}

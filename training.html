@@ -1,52 +1,71 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" class="cms-loading">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17392f">
-  <meta name="description" content="Gruppentraining für Einsteiger und Fortgeschrittene mit Oliver Eckstein im Wendland.">
-  <title>Gruppentraining – Oliver Eckstein</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7b8a73">
+  <meta name="description" content="Golftraining in Lemgow und im Wendland: individuelles Golftraining und Gruppentraining mit Oliver Eckstein. Termine persönlich anfragen.">
+  <title>Golftraining in Lemgow &amp; Wendland | Oliver Eckstein</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Oliver Eckstein – Startseite"><span class="brand-mark">OE</span><span>OLIVER ECKSTEIN<small>GOLFTRAINING · WENDLAND</small></span></a>
+    <a class="brand" href="index.html" aria-label="Oliver Eckstein – Startseite"><span class="brand-mark">OE</span><span><span data-cms-global="brandName">Oliver Eckstein</span><small data-cms-global="brandTagline">GOLFTRAINING · WENDLAND</small></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen"><span></span><span></span></button>
     <nav class="main-nav" id="site-nav" aria-label="Hauptnavigation">
-      <a href="index.html">Start</a><a href="training.html" aria-current="page">Training</a><a href="golfplatz.html">Golfplatz</a><a class="nav-button" href="kontakt.html">Kontakt <span>↗</span></a>
+      <a href="index.html" data-cms-global="navStart">Start</a><a href="training.html" aria-current="page" data-cms-global="navTraining">Training</a><a href="ueber-mich.html" data-cms-global="navAbout">Über mich</a><a href="golfplatz.html" data-cms-global="navGolfplatz">Golfplatz</a><a class="nav-button" href="kontakt.html"><span data-cms-global="navKontakt">Kontakt</span> <span class="arrow-icon" aria-hidden="true"></span></a>
     </nav>
   </header>
   <main>
-    <section class="page-hero training-hero" data-media-background="trainingHeader">
-      <div class="page-hero-inner"><p class="eyebrow eyebrow-light">Gemeinsam trainieren</p><h1>Ein Kurs.<br><em>Für alle.</em></h1><p>Ein Gruppentraining für Einsteiger und Fortgeschrittene – im eigenen Tempo und mit Freude am Spiel.</p></div>
+    <section class="page-hero training-hero">
+      <div class="page-hero-inner"><p class="eyebrow eyebrow-light" data-cms="hero.eyebrow">Golftraining im Wendland</p><h1 data-cms="hero.titleFirst">Mein Trainingsangebot</h1><p data-cms="hero.description">Entdecken Sie Individualtraining und Gruppentraining. Termine und Details stimmen wir persönlich ab.</p></div>
+      <div class="page-hero-visual"><img data-media="trainingHeader" alt="" aria-hidden="true" fetchpriority="high"></div>
     </section>
     <section class="offer-section content-width">
-      <div class="offer-grid offer-grid-single">
-        <article class="offer-card offer-highlight">
-          <p class="card-number">GRUPPENTRAINING · LEMGOW</p>
-          <h2>Zusammen besser spielen.</h2>
-          <p>Wir trainieren in einer überschaubaren Gruppe und arbeiten an Technik, Schwung und einem sicheren Gefühl auf dem Platz.</p>
-          <ul>
-            <li>Etwa 7–10 Personen pro Gruppe</li>
-            <li>Für Einsteiger und Fortgeschrittene</li>
-            <li>Voraussichtlich ein Termin pro Woche; Details stimmen wir persönlich ab</li>
+      <div class="offer-intro">
+        <p class="eyebrow">Passend zu Ihren Zielen</p>
+        <p>Ob Sie Golf neu entdecken oder gezielt an Ihrem Spiel arbeiten möchten: Wir stimmen das Training persönlich auf Sie ab.</p>
+      </div>
+      <div class="offer-grid training-offer-grid">
+        <article class="offer-card">
+          <h2 data-cms="offer.title">Gemeinsam trainieren</h2>
+          <p data-cms="offer.description">Im Kurstraining üben wir drei Schlagvarianten abwechselnd: Chip, Pitch und Bunkerschlag. Die Schläge werden vielfach geübt und von mir laufend kontrolliert. Nach einer gründlichen Analyse gehe ich individuell auf jede Spielerin und jeden Spieler ein, um vorhandene Techniken zu bestätigen oder gezielt zu verbessern. Nach mehreren Einheiten trainieren wir die Schläge zum Abschluss gezielt unter Stress, damit sie auch in solchen Situationen kontrolliert gelingen.</p>
+          <ul id="training-benefits">
+            <li>Chip, Pitch und Bunkerschlag im Wechsel</li>
+            <li>Individuelle Analyse und laufende Kontrolle</li>
+            <li>Abschließendes Üben unter Stresssituationen</li>
+            <li>Auf 3 Teilnehmende begrenzt</li>
           </ul>
-          <div class="price"><strong>Termine &amp; Preis auf Anfrage</strong></div>
-          <a class="text-link" href="kontakt.html?paket=Gruppentraining">Gruppentraining anfragen <span>→</span></a>
+          <div class="price"><strong data-cms="offer.price">180 €</strong><span data-cms="offer.duration">/ 90 Min.</span></div>
+          <a class="text-link" href="kontakt.html?paket=Gruppentraining"><span data-cms="offer.cta">Gruppentraining anfragen</span> <span class="arrow-icon" aria-hidden="true"></span></a>
+        </article>
+        <article class="offer-card">
+          <h2 data-cms="individual.title">Individualtraining</h2>
+          <p data-cms="individual.description">Wir beginnen mit Chip und Pitch und bauen das Training Schritt für Schritt bis zum langen, geraden Drive auf. Nach dem Ansprechen des Balls bleibt der Rückschwung kurz; dynamisch wird der Durchschwung. Der kurze Chip- und Pitchschwung ist Teil der gesamten Bewegung und wird zu einem wichtigen Erfolgsfaktor. Diese Technik habe ich selbst erfolgreich bei internationalen Turnieren angewendet. Sie macht auch den Drive leichter umsetzbar und fördert Nachhaltigkeit sowie die Kontrolle über Körper, Schläger und Ball.</p>
+          <ul id="individual-benefits">
+            <li>Schrittweiser Aufbau: Chip, Pitch bis zum langen, geraden Drive</li>
+            <li>Kurzer Rückschwung und dynamischer Durchschwung</li>
+            <li>Technik aus meiner Erfahrung bei internationalen Turnieren</li>
+            <li>Mehr Nachhaltigkeit und Kontrolle über Körper, Schläger und Ball</li>
+          </ul>
+          <div class="price"><strong data-cms="individual.price">80 €</strong><span data-cms="individual.duration">/ 50 Min.</span></div>
+          <a class="text-link" href="kontakt.html?paket=Individualtraining"><span data-cms="individual.cta">Individualtraining anfragen</span> <span class="arrow-icon" aria-hidden="true"></span></a>
         </article>
       </div>
     </section>
     <section class="content-width trainer-gallery-section">
-      <p class="eyebrow">Einblicke</p><h2>Oliver auf dem Platz.</h2>
+      <h2 data-cms="gallery.title">Oliver auf dem Platz.</h2>
       <div class="gallery-grid trainer-gallery-grid" id="trainer-gallery"></div>
     </section>
   </main>
   <footer class="site-footer">
-    <a class="brand" href="index.html"><span class="brand-mark">OE</span><span>OLIVER ECKSTEIN<small>GOLFTRAINING · WENDLAND</small></span></a>
-    <p>Persönliches Golftraining im Wendland.</p>
-    <nav aria-label="Rechtliche Informationen"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
-    <span class="copyright">© <span data-year></span> Oliver Eckstein · Fotos: Laith Najm</span>
+    <a class="brand" href="index.html"><span class="brand-mark">OE</span><span><span data-cms-global="brandName">Oliver Eckstein</span><small data-cms-global="brandTagline">GOLFTRAINING · WENDLAND</small></span></a>
+    <p data-cms-global="footerText">Persönliches Golftraining im Wendland.</p>
+    <nav aria-label="Rechtliche Informationen"><a href="impressum.html" data-cms-global="navImpressum">Impressum</a><a href="datenschutz.html" data-cms-global="navDatenschutz">Datenschutz</a></nav>
+    <span class="copyright">© <span data-year></span> <span data-cms-global="photoCredit">Oliver Eckstein</span></span>
   </footer>
-  <script src="media-config.js" defer></script><script src="script.js" defer></script>
+  <script src="media-config.js" defer></script><script src="script.js" defer></script><script src="cms-content.js" defer></script>
 </body>
 </html>

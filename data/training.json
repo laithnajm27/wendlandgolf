@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "eyebrow": "Golftraining im Wendland",
+    "titleFirst": "Mein Trainingsangebot",
+    "description": "Entdecken Sie Individualtraining und Kurstraining. Termine und Details stimmen wir persönlich ab."
+  },
+  "offer": {
+    "number": "GRUPPENTRAINING · LEMGOW",
+    "title": "Kurstraining",
+    "description": "Im Kurstraining üben wir drei Schlagvarianten abwechselnd: Chip, Pitch und Bunkerschlag. Die Schläge werden vielfach geübt und von mir laufend kontrolliert. Nach einer gründlichen Analyse gehe ich individuell auf jede Spielerin und jeden Spieler ein, um vorhandene Techniken zu bestätigen oder gezielt zu verbessern. Nach mehreren Einheiten trainieren wir die Schläge zum Abschluss gezielt unter Stress, damit sie auch in solchen Situationen kontrolliert gelingen.",
+    "benefits": [
+      "Chip, Pitch und Bunkerschlag im Wechsel",
+      "Individuelle Analyse und laufende Kontrolle",
+      "Abschließendes Üben unter Stresssituationen",
+      "Auf 3 Teilnehmende begrenzt"
+    ],
+    "price": "180 €",
+    "duration": "/ 90 Min.",
+    "cta": "Gruppentraining anfragen"
+  },
+  "individual": {
+    "title": "Individualtraining",
+    "description": "Wir beginnen mit Chip und Pitch und bauen das Training Schritt für Schritt bis zum langen, geraden Drive auf. Nach dem Ansprechen des Balls bleibt der Rückschwung kurz; dynamisch wird der Durchschwung. Der kurze Chip- und Pitchschwung ist Teil der gesamten Bewegung und wird zu einem wichtigen Erfolgsfaktor. Diese Technik habe ich selbst erfolgreich bei internationalen Turnieren angewendet. Sie macht auch den Drive leichter umsetzbar und fördert Nachhaltigkeit sowie die Kontrolle über Körper, Schläger und Ball.",
+    "benefits": [
+      "Schrittweiser Aufbau: Chip, Pitch bis zum langen, geraden Drive",
+      "Kurzer Rückschwung und dynamischer Durchschwung",
+      "Technik aus meiner Erfahrung bei internationalen Turnieren",
+      "Mehr Nachhaltigkeit und Kontrolle über Körper, Schläger und Ball"
+    ],
+    "price": "80 €",
+    "duration": "/ 50 Min.",
+    "cta": "Individualtraining anfragen"
+  },
+  "gallery": {
+    "title": "Oliver auf dem Platz."
+  }
+}

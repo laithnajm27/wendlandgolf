@@ -1,0 +1,31 @@
+{
+  "title": "Impressum",
+  "eyebrow": "Rechtliches",
+  "notice": "",
+  "sections": [
+    {
+      "heading": "Angaben gemäß § 5 DDG",
+      "body": "Oliver Eckstein\nWendland-Golf\nDorfstraße 8\n29485 Lemgow OT Simander"
+    },
+    {
+      "heading": "Kontakt",
+      "body": "Tel.: +49 (0) 151 54998883\nE-Mail: olivereckstein@wendland-golf.de"
+    },
+    {
+      "heading": "Berufsbezeichnung und berufsrechtliche Regelungen",
+      "body": "Berufsbezeichnung: PGA Professional (verliehen in der Bundesrepublik Deutschland)\nZuständiger Verband: Professional Golfers Association of Germany (PGA of Germany e.V.), Landsberger Str. 290, 80687 München"
+    },
+    {
+       "heading": "PGA of Germany e.V. - Satzung",
+       "body": "[Satzung 2023](https://www.pga.de/files/pga/PGA_Baum_Neu/download/Mitgliedschaft/formulare/Satzung%202023.pdf)"
+     },
+     {
+       "heading": "Informationen zur Webseitenerstellung & Bildnachweis",
+      "body": "Webdesign & Realisierung: [Laith Najm (dg.motion_de)](https://linktr.ee/dg.motion_de)\nBildnachweis (Fotos & visuelle Inhalte): [Laith Najm (dg.motion_de)](https://linktr.ee/dg.motion_de)"
+    },
+    {
+      "heading": "Haftungsausschluss und Urheberrecht",
+      "body": "Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht."
+    }
+  ]
+}

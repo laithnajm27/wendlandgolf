@@ -1,0 +1,5 @@
+DirectoryIndex index.html index.php
+Options -Indexes
+<FilesMatch "^(bootstrap|set-password)\.php$">
+  Require all denied
+</FilesMatch>

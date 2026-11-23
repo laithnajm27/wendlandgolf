@@ -1,0 +1,61 @@
+name: Complete E2E matrix
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: e2e-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  e2e:
+    name: ${{ matrix.browser }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        browser: [chromium, firefox, webkit]
+    env:
+      CI: true
+      E2E_BROWSER: ${{ matrix.browser }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install browser and Linux dependencies
+        if: runner.os == 'Linux'
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+
+      - name: Install browser
+        if: runner.os != 'Linux'
+        run: npx playwright install ${{ matrix.browser }}
+
+      - name: Run end-to-end, visual, accessibility and performance tests
+        run: npm run test:e2e -- --project=${{ matrix.browser }}
+
+      - name: Upload reports, screenshots and traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-${{ runner.os }}-${{ matrix.browser }}
+          path: |
+            test-results/
+            playwright-report/
+          if-no-files-found: warn
+          retention-days: 14
