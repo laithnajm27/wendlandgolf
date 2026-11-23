@@ -188,7 +188,14 @@ const saveConsent = externalMedia => {
   try { localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consentState)); } catch { /* Auswahl bleibt bis zum Neuladen im Arbeitsspeicher erhalten. */ }
   showCookieBanner(false);
   if (consentDialog.open) consentDialog.close();
-  if (!externalMedia && document.querySelector('#map-box iframe')) renderMapPlaceholder();
+  if (externalMedia) {
+    const mapBox = document.querySelector('#map-box');
+    if (mapBox && !mapBox.querySelector('iframe')) {
+      mapBox.innerHTML = '<iframe title="Google Maps – Dorfstraße 8, Simander" src="https://www.google.com/maps?q=Dorfstra%C3%9Fe%208%2C%2029485%20Lemgow%20OT%20Simander%2C%20Deutschland&z=16&output=embed" width="600" height="450" style="border:0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+    }
+  } else if (document.querySelector('#map-box iframe')) {
+    renderMapPlaceholder();
+  }
 };
 
 document.querySelectorAll('.site-footer nav').forEach(nav => {

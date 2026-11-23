@@ -155,7 +155,6 @@ function renderEditor() {
   addTextField(home, 'Hauptüberschrift – erste Zeile', siteData.home, 'heroTitleFirst');
   addTextField(home, 'Hauptüberschrift – hervorgehobene Zeile', siteData.home, 'heroTitleEmphasis');
   addTextField(home, 'Einleitung', siteData.home, 'heroDescription', true, 3);
-  addTextField(home, 'Text auf der Platz-Kachel', siteData.home, 'teaserText', true, 3);
   addTextField(home, 'Zitat', siteData.home, 'trainerQuote', true, 2);
   addTextField(home, 'Zitat von', siteData.home, 'trainerQuoteAuthor');
   editorRoot.append(home);
@@ -188,7 +187,7 @@ function readEditor() {
   document.querySelectorAll('#editor-root [data-path]').forEach(control => {
     const keys = control.dataset.path.split('.');
     let target = siteData;
-    if (keys[0] === 'heroTitleFirst' || keys[0] === 'heroTitleEmphasis' || keys[0] === 'heroDescription' || keys[0] === 'teaserText' || keys[0] === 'trainerQuote' || keys[0] === 'trainerQuoteAuthor') target = siteData.home;
+    if (keys[0] === 'heroTitleFirst' || keys[0] === 'heroTitleEmphasis' || keys[0] === 'heroDescription' || keys[0] === 'trainerQuote' || keys[0] === 'trainerQuoteAuthor') target = siteData.home;
     else if (keys[0] === 'offer' || keys[0] === 'individual') target = siteData.training;
     else target = siteData.trainer;
     for (const key of keys.slice(0, -1)) target = target[key];

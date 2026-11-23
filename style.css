@@ -202,6 +202,7 @@
 }
 .hero-visual,.page-hero-visual {
   isolation: isolate;
+  z-index: 0;
 }
 .hero-visual::after,.page-hero-visual::after {
   position: absolute;
@@ -229,6 +230,11 @@
 /* Zurückhaltende Bewegungen für ein lebendiges, ruhiges Seitenerlebnis */
 .reveal-ready [data-reveal] { opacity: 0; transform: translate3d(0, 22px, 0); transition: opacity .7s cubic-bezier(.2,.7,.2,1) var(--reveal-delay, 0ms), transform .7s cubic-bezier(.2,.7,.2,1) var(--reveal-delay, 0ms); will-change: opacity, transform; }
 .reveal-ready [data-reveal].is-visible { opacity: 1; transform: translate3d(0, 0, 0); will-change: auto; }
+.reveal-ready .about-strip { opacity: 1; transform: none; transition: none; }
+.reveal-ready .photo-teaser { opacity: 1; transform: none; transition: none; }
+.reveal-ready .simple-cta { opacity: 1; transform: none; transition: none; }
+.reveal-ready .offer-card { opacity: 1; transform: none; transition: none; }
+.reveal-ready .trainer-gallery-section { opacity: 1; transform: none; transition: none; }
 .hero-content { animation: hero-enter .9s cubic-bezier(.2,.7,.2,1) both; }
 .hero-location { animation: hero-enter .8s .22s cubic-bezier(.2,.7,.2,1) both; }
 @keyframes hero-enter { from { opacity: 0; transform: translate3d(0, 18px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
@@ -240,7 +246,7 @@
 @media (max-width: 620px) {
   .gallery-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .gallery-grid:not(.trainer-gallery-grid) .gallery-item { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 1.4 / 1; }
-  .gallery-grid:not(.trainer-gallery-grid) .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery-grid:not(.trainer-gallery-grid) .gallery-item img { width: 100%; height: 100%; object-fit: contain; }
   .teaser-image { min-height: 0; height: auto; aspect-ratio: auto; }
   .teaser-image img { width: 100%; height: auto; object-fit: contain; }
   .about-strip { grid-template-columns: minmax(0, 1fr); gap: 22px; }
@@ -401,7 +407,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 .gallery-item figcaption { position: absolute; left: 17px; bottom: 15px; z-index: 1; color: white; font-size: 10px; text-shadow: 0 1px 8px #000; }
@@ -433,6 +439,7 @@
 }
 @media (max-width: 620px) {
   .hero,.page-hero { min-height: min(640px, calc(100svh - 70px)); padding: 56px 0; }
+  .hero-visual img,.hero-visual video,.page-hero-visual img { object-fit: contain; }
   .hero-content h1,.page-hero h1 { font-size: clamp(34px, 10vw, 46px); }
   .hero-content,.page-hero-inner { width: calc(100% - 44px); }
   .hero::before,.page-hero::before {
@@ -443,7 +450,7 @@
   .about-photo { width: min(100%, 480px); margin-inline: auto; }
   .gallery-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .gallery-grid:not(.trainer-gallery-grid) .gallery-item { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 1.4 / 1; }
-  .gallery-grid:not(.trainer-gallery-grid) .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery-grid:not(.trainer-gallery-grid) .gallery-item img { width: 100%; height: 100%; object-fit: contain; }
   .trainer-gallery-grid { grid-template-columns: minmax(0, 1fr); }
   .site-footer { grid-template-columns: minmax(0, 1fr); padding: 28px 22px; gap: 14px; }
   .site-footer .brand,.site-footer > p,.site-footer nav,.site-footer .copyright { grid-column: 1; }
@@ -632,6 +639,8 @@
 }
 .place-intro {
   padding: 0;
+  position: relative;
+  isolation: isolate;
   min-height: min(900px, 90svh);
   display: flex;
   align-items: center;
@@ -648,6 +657,9 @@
 .place-intro .eyebrow { color: #d4ddd6; }
 .place-intro h2 { color: white; }
 .place-intro h2 em { color: var(--gold); }
+.place-intro h1 { margin: 0; color: white; font-size: clamp(34px, 4vw, 50px); }
+.place-intro h1 em { color: var(--gold); }
+.place-intro-inner { position: relative; z-index: 3; }
 @media (max-width: 620px) {
   .place-intro {
     min-height: 540px;
@@ -707,9 +719,18 @@
 }
 
 /* Gemeinsame Lesbarkeit und Typografie auf allen öffentlichen Seiten. */
+.eyebrow { color: #405148; }
+.eyebrow-light { color: #eef3ef; }
+#teaser-title-first, .teaser-copy > p:not(.eyebrow), .teaser-copy .text-link,
+.teaser-copy, .site-footer > p, .copyright, .career-year { color: #405148; }
+.teaser-copy .eyebrow { color: #405148; }
+.about-strip .eyebrow-light { color: #eef3ef; }
+.about-strip #trainer-intro, .about-strip blockquote p, .about-strip cite,
+.about-strip .text-link-light { color: #f2f5f2; }
 body { font-size: 16px; line-height: 1.72; }
 .brand { font-size: 12px; }
 .brand small { font-size: 9px; }
+.brand small { color: #596557; }
 .main-nav a { font-size: 12px; }
 .eyebrow { font-size: 10px; }
 .hero-content > p:not(.eyebrow),.page-hero-inner > p:not(.eyebrow) { font-size: 15px; line-height: 1.7; }

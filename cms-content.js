@@ -77,7 +77,9 @@ const renderCmsGallery = (gallery, targetId) => {
 const renderCareerTimeline = career => {
   const timeline = document.querySelector('.career-timeline');
   if (!timeline || !Array.isArray(career)) return;
-  const entries = career.filter(entry => entry && typeof entry.year === 'string' && Array.isArray(entry.achievements));
+  const entries = career
+    .filter(entry => entry && typeof entry.year === 'string' && Array.isArray(entry.achievements))
+    .sort((a, b) => Number.parseInt(b.year, 10) - Number.parseInt(a.year, 10));
   timeline.replaceChildren(...entries.map(entry => {
     const item = document.createElement('li');
     item.className = 'career-timeline-item';
