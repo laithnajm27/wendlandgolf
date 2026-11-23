@@ -2,14 +2,14 @@
   "name": "Oliver Eckstein",
   "intro": "Golf ist ein Spiel fürs Leben. Ich begleite Sie dabei, es mit Freude und Vertrauen zu entdecken.",
   "career": [
-    { "year": "1983", "achievements": ["Jüngster Hamburger Meister der Herren"] },
-    { "year": "1984", "achievements": ["HCP 0 im Alter von 16 Jahren", "Bester europäischer Spieler bei der Orange Bowl in Florida, 4. Platz gesamt"] },
-    { "year": "1985", "achievements": ["Welt- und Europameister der Junioren", "Doug Sanders Trophy, Aberdeen"] },
-    { "year": "1986", "achievements": ["Sieben Turniersiege auf der Tour", "Gewinn der European Tour Card"] },
-    { "year": "1987", "achievements": ["Nummer eins der nationalen und internationalen Rangliste Deutschlands", "Golfspieler des Jahres in Deutschland", "6. Platz bei der German Open", "Teilnahme am World Cup, 15. Platz auf Hawaii", "Teilnahme am Dunhill Cup in Rom"] },
-    { "year": "1988", "achievements": ["Gewinner der Internationalen Coupe Trophy in Hamburg", "5. Platz bei den Italian Open", "Teilnahme am Dunhill Cup in Singapur"] },
-    { "year": "1995", "achievements": ["Gewinner der UPS Masters", "Internationaler Süddeutscher Masters-Meister"] },
+    { "year": "2018", "achievements": ["Deutscher Seniorenmeister"] },
     { "year": "1996", "achievements": ["Gewinner der Thailand-Qualifikation", "12. Platz bei den Hong Kong Open", "15. Platz bei den Philippine Open"] },
-    { "year": "2018", "achievements": ["Deutscher Seniorenmeister"] }
+    { "year": "1995", "achievements": ["Gewinner der UPS Masters", "Internationaler Süddeutscher Masters-Meister"] },
+    { "year": "1988", "achievements": ["Gewinner der Internationalen Coupe Trophy in Hamburg", "5. Platz bei den Italian Open", "Teilnahme am Dunhill Cup in Singapur"] },
+    { "year": "1987", "achievements": ["Nummer eins der nationalen und internationalen Rangliste Deutschlands", "Golfspieler des Jahres in Deutschland", "6. Platz bei der German Open", "Teilnahme am World Cup, 15. Platz auf Hawaii", "Teilnahme am Dunhill Cup in Rom"] },
+    { "year": "1986", "achievements": ["Sieben Turniersiege auf der Tour", "Gewinn der European Tour Card"] },
+    { "year": "1985", "achievements": ["Welt- und Europameister der Junioren", "Doug Sanders Trophy, Aberdeen"] },
+    { "year": "1984", "achievements": ["HCP 0 im Alter von 16 Jahren", "Bester europäischer Spieler bei der Orange Bowl in Florida, 4. Platz gesamt"] },
+    { "year": "1983", "achievements": ["Jüngster Hamburger Meister der Herren"] }
   ]
 }
